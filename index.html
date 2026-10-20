@@ -46,7 +46,7 @@
   /* ===== Первый экран ===== */
   .hero {
     position: relative; text-align: center; overflow: hidden;
-    background: linear-gradient(180deg, #07051a 0%, #1d0b45 45%, #3a1366 62%, var(--bg1) 62.2%);
+    background: linear-gradient(180deg, #07051a 0%, #1d0b45 70%, #3a1366 100%) top / 100% 270px no-repeat, var(--bg1);
   }
   .scene { position: relative; height: 430px; max-width: 620px; margin: 0 auto; }
 
@@ -95,7 +95,7 @@
     background: linear-gradient(180deg, #2a0d4f, var(--bg1));
   }
   .floor::before {
-    content: ""; position: absolute; left: -100%; right: -100%; top: 0; height: 320px;
+    content: ""; position: absolute; left: 50%; width: 100vw; margin-left: -50vw; bottom: 0; height: 160px; z-index: 2;
     background-image:
       linear-gradient(rgba(255, 47, 179, .75) 2px, transparent 2px),
       linear-gradient(90deg, rgba(255, 47, 179, .75) 2px, transparent 2px);
